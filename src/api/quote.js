@@ -13,3 +13,13 @@ export const getRandomQuote = async () => {
 		throw new Error("Something went wrong");
 	}
 };
+
+export const getQuoteByAuthor = async (author) => {
+	try {
+		const response = await Quote.get(`/quotes?author=${author}`);
+
+		return response.data;
+	} catch (error) {
+		throw new Error("Something went wrong");
+	}
+};
