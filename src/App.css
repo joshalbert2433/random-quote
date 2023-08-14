@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	font-family: "Raleway", sans-serif;
+}
+
+.montserrat-custom {
+	font-family: "Montserrat", sans-serif;
+}
+
+.hover-custom {
+	transition: transform 0.7s ease-in-out;
+}
+
+.parent-custom:hover .hover-custom {
+	transform: rotate(360deg);
+}
